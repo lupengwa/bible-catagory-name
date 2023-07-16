@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/lupengwa/bible-catagory-name/static/css/main.2a1ada9c.css",
-    "main.js": "/lupengwa/bible-catagory-name/static/js/main.48107e96.js",
-    "index.html": "/lupengwa/bible-catagory-name/index.html",
-    "main.2a1ada9c.css.map": "/lupengwa/bible-catagory-name/static/css/main.2a1ada9c.css.map",
-    "main.48107e96.js.map": "/lupengwa/bible-catagory-name/static/js/main.48107e96.js.map"
+    "main.css": "/bible-catagory-name/static/css/main.2a1ada9c.css",
+    "main.js": "/bible-catagory-name/static/js/main.48107e96.js",
+    "index.html": "/bible-catagory-name/index.html",
+    "main.2a1ada9c.css.map": "/bible-catagory-name/static/css/main.2a1ada9c.css.map",
+    "main.48107e96.js.map": "/bible-catagory-name/static/js/main.48107e96.js.map"
   },
   "entrypoints": [
     "static/css/main.2a1ada9c.css",
