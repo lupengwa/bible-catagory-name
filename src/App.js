@@ -129,30 +129,39 @@ export default function App() {
     return { title: title, items: array };
   };
   const section1 = sectionGen("律法书(5)", 5);
-  const expectedSection1 = [["创世记", "出埃及记", "利未记", "民数记", "申命记"],["創世記", "出埃及記", "利未記", "民數記", "申命記"],["Genesis","Exodus","Leviticus","Numbers","Deuteronomy"]];
+  const expectedSection1 = [["创", "出", "利", "民", "申"], ["Gen","Exo","Lev","Num","Deu"], ["创世记", "出埃及记", "利未记", "民数记", "申命记"],["創世記", "出埃及記", "利未記", "民數記", "申命記"],["Genesis","Exodus","Leviticus","Numbers","Deuteronomy"]];
   const section2 = sectionGen("历史书(12)", 12);
-  const expectedSection2 = [["约书亚记", "士师记", "路得记", "撒母耳记上", "撒母耳记下", "列王纪上", "列王纪下", "历代志上", "历代志下", "以斯拉记", "尼希米记", "以斯帖记"],
+  const expectedSection2 = [["书", "士", "得", "撒上", "撒下", "王上", "王下", "代上", "代下", "拉", "尼", "斯"],
+        ["Jos","Jdg","Rut","1Sa","2Sa","1Ki","2Ki","1Ch","2Ch","Ezr","Neh","Est"],
+      ["约书亚记", "士师记", "路得记", "撒母耳记上", "撒母耳记下", "列王纪上", "列王纪下", "历代志上", "历代志下", "以斯拉记", "尼希米记", "以斯帖记"],
     ["約書亞記", "士師記", "路得記", "撒母耳記上", "撒母耳記下", "列王紀上", "列王紀下", "歷代志上", "歷代志下", "以斯拉記", "尼希米記", "以斯帖記"],
   ["Joshua","Judges","Ruth","1 Samuel","2 Samuel","1 Kings","2 Kings","1 Chronicles","2 Chronicles","Ezra","Nehemiah","Esther"]];
   const section3 = sectionGen("诗歌(5)", 5);
-  const expectedSection3 = [["约伯记", "诗篇", "箴言", "传道书", "雅歌"],["約伯記", "詩篇", "箴言", "傳道書", "雅歌"],["Job","Psalms","Proverbs","Ecclesiastes","Song of Songs"]];
+  const expectedSection3 = [["伯", "诗", "箴", "传", "歌"], ["Job","Psa","Pro","Ecc","Son"], ["约伯记", "诗篇", "箴言", "传道书", "雅歌"],["約伯記", "詩篇", "箴言", "傳道書", "雅歌"],["Job","Psalms","Proverbs","Ecclesiastes","Song of Songs"]];
   const section4 = sectionGen("大小先知书(17)", 17);
-  const expectedSection4 = [["以赛亚书", "耶利米书", "耶利米哀歌", "以西结书", "但以理书", "何西阿书", "约珥书", "阿摩司书", "俄巴底亚书", "约拿书", "弥迦书", "那鸿书", "哈巴谷书", "西番雅书", "哈该书", "撒迦利亚书", "玛拉基书"],
+  const expectedSection4 = [["赛", "耶", "哀", "结", "但", "何", "珥", "摩", "俄", "拿", "弥", "鸿", "哈", "番", "该", "亚", "玛"],
+    ["Isa","Jer","Lam","Eze","Dan","Hos","Joe","Amo","Oba","Jon","Mic","Nah","Hab","Zep","Hag","Zec","Mal"],
+      ["以赛亚书", "耶利米书", "耶利米哀歌", "以西结书", "但以理书", "何西阿书", "约珥书", "阿摩司书", "俄巴底亚书", "约拿书", "弥迦书", "那鸿书", "哈巴谷书", "西番雅书", "哈该书", "撒迦利亚书", "玛拉基书"],
     ["以賽亞書","耶利米書","耶利米哀歌","以西結書","但以理書","何西阿書","約珥書","阿摩司書","俄巴底亞書","約拿書","彌迦書","那鴻書","哈巴谷書","西番雅書","哈該書","撒迦利亞書","瑪拉基書"],
-    "Isaiah","Jeremiah","Lamentations","Ezekiel","Daniel","Hosea","Joel","Amos","Obadiah","Jonah","Micah","Nahum","Habakkuk","Zephaniah","Haggai","Zechariah","Malachi"];
+    ["Isaiah","Jeremiah","Lamentations","Ezekiel","Daniel","Hosea","Joel","Amos","Obadiah","Jonah","Micah","Nahum","Habakkuk","Zephaniah","Haggai","Zechariah","Malachi"]];
   const section5 = sectionGen("福音书(4)", 4);
-  const expectedSection5 = [["马太福音", "马可福音", "路加福音", "约翰福音"],["馬太福音","馬可福音","路加福音","約翰福音"],["Matthew","Mark","Luke","John"]];
+  const expectedSection5 = [["太", "可", "路", "约"], ["Mat","Mar","Luk","Joh"], ["马太福音", "马可福音", "路加福音", "约翰福音"],["馬太福音","馬可福音","路加福音","約翰福音"],["Matthew","Mark","Luke","John"]];
   const section6 = sectionGen("新约历史书(1)", 1);
-  const expectedSection6 = [["使徒行传"],["使徒行傳"],["Acts"]];
+  const expectedSection6 = [["徒"], ["Act"], ["使徒行传"],["使徒行傳"],["Acts"]];
   const section7 = sectionGen("保罗书信(13)", 13);
-  const expectedSection7 = [["罗马书", "哥林多前书", "哥林多后书", "加拉太书", "以弗所书", "腓立比书", "歌罗西书", "帖撒罗尼迦前书", "帖撒罗尼迦后书", "提摩太前书", "提摩太后书", "提多书", "腓利门书"],
+  const expectedSection7 = [["罗", "林前", "林后", "加", "弗", "腓", "西", "帖前", "帖后", "提前", "提后", "多", "门"],
+    ["Rom","1Co","2Co","Gal","Eph","Phi","Col","1Th","2Th","1Ti","2Ti","Tit","Phm"],
+      ["罗马书", "哥林多前书", "哥林多后书", "加拉太书", "以弗所书", "腓立比书", "歌罗西书", "帖撒罗尼迦前书", "帖撒罗尼迦后书", "提摩太前书", "提摩太后书", "提多书", "腓利门书"],
     ["羅馬書","哥林多前書","哥林多後書","加拉太書","以弗所書","腓立比書","歌羅西書","帖撒羅尼迦前書","帖撒羅尼迦後書","提摩太前書","提摩太後書","提多書","腓利門書"],
   ["Romans","1 Corinthians","2 Corinthians","Galatians","Ephesians","Philippians","Colossians","1 Thessalonians","2 Thessalonians","1 Timothy","2 Timothy","Titus","Philemon"]];
   const section8 = sectionGen("一般书信(8)", 8);
-  const expectedSection8 = [["希伯来书", "雅各书", "彼得前书", "彼得后书", "约翰一书", "约翰二书", "约翰三书", "犹大书"],["希伯來書","雅各書","彼得前書","彼得後書","約翰壹書","約翰貳書","約翰參書","猶大書"],
+  const expectedSection8 = [["来", "雅", "彼前", "彼后", "约一", "约二", "约三", "犹"],
+    ["Heb","Jame","1Pe","2Pe","1Jo","2Jo","3Jo","Jud"],
+    ["希伯来书", "雅各书", "彼得前书", "彼得后书", "约翰一书", "约翰二书", "约翰三书", "犹大书"],
+    ["希伯來書","雅各書","彼得前書","彼得後書","約翰壹書","約翰貳書","約翰參書","猶大書"],
   ["Hebrews","James","1 Peter","2 Peter","1 John","2 John","3 John","Jude"]];
   const section9 = sectionGen("先知书(1)", 1);
-  const expectedSection9 = [["启示录"],["啟示錄"],["Revelation"]];
+  const expectedSection9 = [["启"], ["Rev"], ["启示录"],["啟示錄"],["Revelation"]];
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
